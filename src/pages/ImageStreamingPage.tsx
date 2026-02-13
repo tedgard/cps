@@ -1,4 +1,5 @@
 import PageIntro from '../components/PageIntro'
+import Seo from '../components/Seo'
 import SourceBadges from '../components/SourceBadges'
 import {
   imageStreamingProtocol,
@@ -57,6 +58,10 @@ const sessionTemplate = [
 function ImageStreamingPage() {
   return (
     <article className="page-content">
+      <Seo
+        title="Image Streaming"
+        description="Follow a practical Image Streaming protocol with sequence guidance, troubleshooting patterns, and source-linked explanations from Wenger's archive."
+      />
       <PageIntro
         eyebrow="Image Streaming"
         title="Primary Discovery Method: Detailed Working Procedure"

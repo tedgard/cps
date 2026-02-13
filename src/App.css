@@ -25,6 +25,26 @@
   overflow-x: clip;
 }
 
+.skip-link {
+  position: absolute;
+  top: -3rem;
+  left: 1rem;
+  z-index: 10;
+  border-radius: 0.6rem;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  font: 620 0.73rem/1 'Sora', sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(135deg, var(--brand), #2f88c4);
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  top: 0.75rem;
+}
+
 .app-shell::before {
   content: '';
   position: absolute;
@@ -137,6 +157,16 @@
   transform: translateY(-1px);
 }
 
+.nav-link:focus-visible,
+.button-link:focus-visible,
+.text-link:focus-visible,
+.reference-card a:focus-visible,
+.site-footer a:focus-visible,
+.skip-link:focus-visible {
+  outline: 3px solid rgba(28, 110, 164, 0.45);
+  outline-offset: 2px;
+}
+
 .nav-link-active {
   background: linear-gradient(135deg, rgba(28, 110, 164, 0.18), rgba(221, 122, 48, 0.14));
   border-color: rgba(15, 36, 56, 0.18);
@@ -228,6 +258,7 @@
   box-shadow: 0 10px 24px rgba(28, 110, 164, 0.28);
   transition: transform 180ms ease, box-shadow 180ms ease;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .button-link:hover {
@@ -441,6 +472,17 @@
   color: var(--brand-dark);
   word-break: break-all;
   font: 580 0.78rem/1.4 'Sora', sans-serif;
+}
+
+.error-message {
+  margin: 0.55rem 0 0;
+}
+
+.error-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.58rem;
+  margin-top: 0.95rem;
 }
 
 .site-footer {

@@ -1,4 +1,5 @@
 import PageIntro from '../components/PageIntro'
+import Seo from '../components/Seo'
 import SourceBadges from '../components/SourceBadges'
 import {
   predictiveImageryNotes,
@@ -71,6 +72,10 @@ const cautionPoints = [
 function PredictiveImageryPage() {
   return (
     <article className="page-content">
+      <Seo
+        title="Predictive Imagery"
+        description="Use Wenger's Predictive Imagery workflow for pre-study priming, journaling, and concept-level learning acceleration with interpretation guardrails."
+      />
       <PageIntro
         eyebrow="Predictive Imagery"
         title="Pre-Study Priming for Faster Concept Integration"

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Creative Problem Solving preview image">
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#f4f9ff" />
+      <stop offset="100%" stop-color="#dcecf9" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c6ea4" />
+      <stop offset="100%" stop-color="#124f77" />
+    </linearGradient>
+    <linearGradient id="highlight" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#f7b27e" />
+      <stop offset="100%" stop-color="#dd7a30" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="123" cy="100" r="240" fill="#b9d8ef" fill-opacity=".38" />
+  <circle cx="1070" cy="580" r="260" fill="#ffd9bc" fill-opacity=".43" />
+
+  <rect x="74" y="78" width="1052" height="474" rx="32" fill="#ffffff" fill-opacity=".88" />
+  <rect x="106" y="110" width="146" height="146" rx="34" fill="url(#accent)" />
+  <circle cx="158" cy="160" r="18" fill="#ffe4ce" />
+  <circle cx="209" cy="136" r="16" fill="#ffe4ce" />
+  <circle cx="218" cy="206" r="20" fill="#ffe4ce" />
+  <path d="M176 159l28-14m8 12l4 33m-56 6l51 11" stroke="#ffffff" stroke-linecap="round" stroke-width="6" />
+
+  <text x="282" y="162" fill="#0f2438" font-family="Sora, Arial, sans-serif" font-size="66" font-weight="700" letter-spacing="-1">
+    Creative Problem Solving
+  </text>
+  <text x="282" y="222" fill="#38546f" font-family="Literata, Georgia, serif" font-size="33">
+    Win Wenger methods, mapped to actionable workflows
+  </text>
+
+  <rect x="108" y="294" width="292" height="168" rx="22" fill="#edf6fd" stroke="#bddbf0" />
+  <text x="136" y="345" fill="#1c6ea4" font-family="Sora, Arial, sans-serif" font-size="24" font-weight="700">
+    Image Streaming
+  </text>
+  <text x="136" y="382" fill="#38546f" font-family="Literata, Georgia, serif" font-size="22">
+    Discovery through
+  </text>
+  <text x="136" y="413" fill="#38546f" font-family="Literata, Georgia, serif" font-size="22">
+    sensory-rich narration
+  </text>
+
+  <rect x="448" y="294" width="292" height="168" rx="22" fill="#fdf4ec" stroke="#f2c9a3" />
+  <text x="476" y="345" fill="#bc6121" font-family="Sora, Arial, sans-serif" font-size="24" font-weight="700">
+    Predictive Imagery
+  </text>
+  <text x="476" y="382" fill="#5b4636" font-family="Literata, Georgia, serif" font-size="22">
+    Pre-study priming
+  </text>
+  <text x="476" y="413" fill="#5b4636" font-family="Literata, Georgia, serif" font-size="22">
+    and concept integration
+  </text>
+
+  <rect x="788" y="294" width="292" height="168" rx="22" fill="#effaf4" stroke="#b7e4cc" />
+  <text x="816" y="345" fill="#0e8251" font-family="Sora, Arial, sans-serif" font-size="24" font-weight="700">
+    Technique Atlas
+  </text>
+  <text x="816" y="382" fill="#33594a" font-family="Literata, Georgia, serif" font-size="22">
+    Method selection by
+  </text>
+  <text x="816" y="413" fill="#33594a" font-family="Literata, Georgia, serif" font-size="22">
+    challenge type
+  </text>
+
+  <path d="M163 535h874" stroke="url(#accent)" stroke-linecap="round" stroke-width="8" />
+  <circle cx="426" cy="535" r="12" fill="url(#accent)" />
+  <circle cx="775" cy="535" r="12" fill="url(#highlight)" />
+</svg>

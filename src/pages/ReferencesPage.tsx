@@ -1,4 +1,5 @@
 import PageIntro from '../components/PageIntro'
+import Seo from '../components/Seo'
 import SourceBadges from '../components/SourceBadges'
 import { faithfulnessNotes, references } from '../data/wengerContent'
 
@@ -20,6 +21,10 @@ const groupedReferences = [
 function ReferencesPage() {
   return (
     <article className="page-content">
+      <Seo
+        title="References"
+        description="Open the full primary source index, grouped references, and faithfulness policy used across this CPS archive website."
+      />
       <PageIntro
         eyebrow="References"
         title="Primary Source Index and Faithfulness Policy"
@@ -52,7 +57,7 @@ function ReferencesPage() {
             <article className="reference-card" key={item.id}>
               <h3>{item.id}</h3>
               <p>{item.title}</p>
-              <a href={item.url} target="_blank" rel="noreferrer">
+              <a href={item.url} target="_blank" rel="noopener noreferrer">
                 {item.url}
               </a>
               <p>{item.note}</p>

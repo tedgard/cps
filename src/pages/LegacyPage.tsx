@@ -1,4 +1,5 @@
 import PageIntro from '../components/PageIntro'
+import Seo from '../components/Seo'
 import SourceBadges from '../components/SourceBadges'
 import { legacyTimeline } from '../data/wengerContent'
 
@@ -53,6 +54,10 @@ const continuityPoints = [
 function LegacyPage() {
   return (
     <article className="page-content">
+      <Seo
+        title="Legacy"
+        description="Review the historical timeline and intent behind Win Wenger's Creative Problem Solving methods, Project Renaissance, and long-term training model."
+      />
       <PageIntro
         eyebrow="Legacy"
         title="Historical Context and Method Intent"

@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom'
+import Seo from '../components/Seo'
 
 function NotFoundPage() {
   return (
     <article className="page-content">
+      <Seo
+        title="Page Not Found"
+        description="The requested CPS route was not found. Return to the overview to continue browsing the Win Wenger methods archive."
+        noIndex
+      />
       <section className="panel compact-panel">
         <p className="eyebrow">404</p>
         <h1>Page not found</h1>

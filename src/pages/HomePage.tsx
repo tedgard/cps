@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import PageIntro from '../components/PageIntro'
+import Seo from '../components/Seo'
 import SourceBadges from '../components/SourceBadges'
 import {
   corePrinciples,
@@ -11,6 +12,10 @@ import {
 function HomePage() {
   return (
     <article className="page-content">
+      <Seo
+        title="Overview"
+        description="Explore Win Wenger's Creative Problem Solving architecture, including Image Streaming, Predictive Imagery, and source-linked implementation patterns."
+      />
       <PageIntro
         eyebrow="CPS Overview"
         title="Win Wenger's Creative Problem Solving Architecture"

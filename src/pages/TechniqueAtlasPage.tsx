@@ -1,4 +1,5 @@
 import PageIntro from '../components/PageIntro'
+import Seo from '../components/Seo'
 import SourceBadges from '../components/SourceBadges'
 import { techniqueAtlas } from '../data/wengerContent'
 
@@ -40,6 +41,10 @@ const situationGuide = [
 function TechniqueAtlasPage() {
   return (
     <article className="page-content">
+      <Seo
+        title="Technique Atlas"
+        description="Browse Wenger's broader technique stack, including Over-the-Wall, High Thinktank, Toolbuilder, and choose-by-situation guidance."
+      />
       <PageIntro
         eyebrow="Technique Atlas"
         title="Beyond Two Flagships: Wenger's Wider Method Stack"

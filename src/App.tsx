@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
+import AppErrorBoundary from './components/AppErrorBoundary'
 import ScrollToTop from './components/ScrollToTop'
 import SiteLayout from './components/SiteLayout'
 import HomePage from './pages/HomePage'
@@ -14,17 +15,19 @@ function App() {
   return (
     <>
       <ScrollToTop />
-      <Routes>
-        <Route element={<SiteLayout />}>
-          <Route index element={<HomePage />} />
-          <Route path="legacy" element={<LegacyPage />} />
-          <Route path="image-streaming" element={<ImageStreamingPage />} />
-          <Route path="predictive-imagery" element={<PredictiveImageryPage />} />
-          <Route path="technique-atlas" element={<TechniqueAtlasPage />} />
-          <Route path="references" element={<ReferencesPage />} />
-          <Route path="*" element={<NotFoundPage />} />
-        </Route>
-      </Routes>
+      <AppErrorBoundary>
+        <Routes>
+          <Route element={<SiteLayout />}>
+            <Route index element={<HomePage />} />
+            <Route path="legacy" element={<LegacyPage />} />
+            <Route path="image-streaming" element={<ImageStreamingPage />} />
+            <Route path="predictive-imagery" element={<PredictiveImageryPage />} />
+            <Route path="technique-atlas" element={<TechniqueAtlasPage />} />
+            <Route path="references" element={<ReferencesPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Route>
+        </Routes>
+      </AppErrorBoundary>
     </>
   )
 }

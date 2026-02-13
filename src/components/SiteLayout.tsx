@@ -12,6 +12,9 @@ const navItems = [
 function SiteLayout() {
   return (
     <div className="app-shell">
+      <a className="skip-link" href="#main-content">
+        Skip to main content
+      </a>
       <div className="ambient ambient-top" aria-hidden />
       <div className="ambient ambient-bottom" aria-hidden />
 
@@ -39,13 +42,13 @@ function SiteLayout() {
         </nav>
       </header>
 
-      <main className="page-shell">
+      <main className="page-shell" id="main-content" tabIndex={-1}>
         <Outlet />
       </main>
 
       <footer className="site-footer">
         <p>Win Wenger tribute project for Creative Problem Solving practice.</p>
-        <a href="https://winwenger.com/" target="_blank" rel="noreferrer">
+        <a href="https://winwenger.com/" target="_blank" rel="noopener noreferrer">
           Visit archive
         </a>
       </footer>
