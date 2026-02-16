@@ -4,8 +4,8 @@
   "description": "Win Wenger methods archive and implementation guide.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f3f7fb",
-  "theme_color": "#1c6ea4",
+  "background_color": "#1e1b2e",
+  "theme_color": "#8b5cf6",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

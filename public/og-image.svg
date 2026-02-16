@@ -1,71 +1,74 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Creative Problem Solving preview image">
   <defs>
-    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#f4f9ff" />
-      <stop offset="100%" stop-color="#dcecf9" />
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b2e" />
+      <stop offset="100%" stop-color="#262342" />
     </linearGradient>
-    <linearGradient id="accent" x1="0%" x2="100%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#1c6ea4" />
-      <stop offset="100%" stop-color="#124f77" />
+    <linearGradient id="brand" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa" />
+      <stop offset="100%" stop-color="#6d28d9" />
     </linearGradient>
-    <linearGradient id="highlight" x1="0%" x2="100%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#f7b27e" />
-      <stop offset="100%" stop-color="#dd7a30" />
+    <linearGradient id="amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
     </linearGradient>
+    <linearGradient id="tealg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf" />
+      <stop offset="100%" stop-color="#14b8a6" />
+    </linearGradient>
+    <radialGradient id="glow1" cx="15%" cy="20%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="transparent" />
+    </radialGradient>
+    <radialGradient id="glow2" cx="85%" cy="85%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="transparent" />
+    </radialGradient>
   </defs>
 
   <rect width="1200" height="630" fill="url(#bg)" />
-  <circle cx="123" cy="100" r="240" fill="#b9d8ef" fill-opacity=".38" />
-  <circle cx="1070" cy="580" r="260" fill="#ffd9bc" fill-opacity=".43" />
+  <rect width="1200" height="630" fill="url(#glow1)" />
+  <rect width="1200" height="630" fill="url(#glow2)" />
 
-  <rect x="74" y="78" width="1052" height="474" rx="32" fill="#ffffff" fill-opacity=".88" />
-  <rect x="106" y="110" width="146" height="146" rx="34" fill="url(#accent)" />
-  <circle cx="158" cy="160" r="18" fill="#ffe4ce" />
-  <circle cx="209" cy="136" r="16" fill="#ffe4ce" />
-  <circle cx="218" cy="206" r="20" fill="#ffe4ce" />
-  <path d="M176 159l28-14m8 12l4 33m-56 6l51 11" stroke="#ffffff" stroke-linecap="round" stroke-width="6" />
+  <rect x="0" y="0" width="1200" height="2" fill="url(#brand)" opacity="0.4" />
 
-  <text x="282" y="162" fill="#0f2438" font-family="Sora, Arial, sans-serif" font-size="66" font-weight="700" letter-spacing="-1">
+  <rect x="90" y="90" width="108" height="108" rx="26" fill="url(#brand)" />
+  <circle cx="124" cy="126" r="10" fill="#fff" fill-opacity="0.6" />
+  <circle cx="164" cy="118" r="8" fill="#f59e0b" fill-opacity="0.7" />
+  <circle cx="148" cy="162" r="12" fill="#2dd4bf" fill-opacity="0.6" />
+  <line x1="132" y1="130" x2="157" y2="121" stroke="#fff" stroke-width="2" stroke-opacity="0.35" stroke-linecap="round" />
+  <line x1="130" y1="136" x2="141" y2="153" stroke="#fff" stroke-width="2" stroke-opacity="0.35" stroke-linecap="round" />
+  <line x1="160" y1="125" x2="155" y2="152" stroke="#fff" stroke-width="2" stroke-opacity="0.25" stroke-linecap="round" />
+
+  <text x="230" y="140" fill="#f0eff5" font-family="Inter, system-ui, sans-serif" font-size="56" font-weight="800" letter-spacing="-1">
     Creative Problem Solving
   </text>
-  <text x="282" y="222" fill="#38546f" font-family="Literata, Georgia, serif" font-size="33">
+  <text x="230" y="188" fill="#b8b3c9" font-family="Georgia, serif" font-size="28">
     Win Wenger methods, mapped to actionable workflows
   </text>
 
-  <rect x="108" y="294" width="292" height="168" rx="22" fill="#edf6fd" stroke="#bddbf0" />
-  <text x="136" y="345" fill="#1c6ea4" font-family="Sora, Arial, sans-serif" font-size="24" font-weight="700">
-    Image Streaming
-  </text>
-  <text x="136" y="382" fill="#38546f" font-family="Literata, Georgia, serif" font-size="22">
-    Discovery through
-  </text>
-  <text x="136" y="413" fill="#38546f" font-family="Literata, Georgia, serif" font-size="22">
-    sensory-rich narration
-  </text>
+  <rect x="90" y="260" width="320" height="180" rx="20" fill="#2a274a" stroke="rgba(255,255,255,0.12)" />
+  <rect x="90" y="260" width="320" height="3" rx="1.5" fill="url(#brand)" opacity="0.6" />
+  <text x="122" y="315" fill="#a78bfa" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" letter-spacing="1.5">IMAGE STREAMING</text>
+  <text x="122" y="348" fill="#f0eff5" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700">Primary Discovery</text>
+  <text x="122" y="383" fill="#b8b3c9" font-family="Georgia, serif" font-size="19">Insight through sensory-rich</text>
+  <text x="122" y="410" fill="#b8b3c9" font-family="Georgia, serif" font-size="19">narration and description</text>
 
-  <rect x="448" y="294" width="292" height="168" rx="22" fill="#fdf4ec" stroke="#f2c9a3" />
-  <text x="476" y="345" fill="#bc6121" font-family="Sora, Arial, sans-serif" font-size="24" font-weight="700">
-    Predictive Imagery
-  </text>
-  <text x="476" y="382" fill="#5b4636" font-family="Literata, Georgia, serif" font-size="22">
-    Pre-study priming
-  </text>
-  <text x="476" y="413" fill="#5b4636" font-family="Literata, Georgia, serif" font-size="22">
-    and concept integration
-  </text>
+  <rect x="440" y="260" width="320" height="180" rx="20" fill="#2a274a" stroke="rgba(255,255,255,0.12)" />
+  <rect x="440" y="260" width="320" height="3" rx="1.5" fill="url(#amber)" opacity="0.6" />
+  <text x="472" y="315" fill="#f59e0b" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" letter-spacing="1.5">PREDICTIVE IMAGERY</text>
+  <text x="472" y="348" fill="#f0eff5" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700">Pre-Study Priming</text>
+  <text x="472" y="383" fill="#b8b3c9" font-family="Georgia, serif" font-size="19">Concept integration and</text>
+  <text x="472" y="410" fill="#b8b3c9" font-family="Georgia, serif" font-size="19">learning acceleration</text>
 
-  <rect x="788" y="294" width="292" height="168" rx="22" fill="#effaf4" stroke="#b7e4cc" />
-  <text x="816" y="345" fill="#0e8251" font-family="Sora, Arial, sans-serif" font-size="24" font-weight="700">
-    Technique Atlas
-  </text>
-  <text x="816" y="382" fill="#33594a" font-family="Literata, Georgia, serif" font-size="22">
-    Method selection by
-  </text>
-  <text x="816" y="413" fill="#33594a" font-family="Literata, Georgia, serif" font-size="22">
-    challenge type
-  </text>
+  <rect x="790" y="260" width="320" height="180" rx="20" fill="#2a274a" stroke="rgba(255,255,255,0.12)" />
+  <rect x="790" y="260" width="320" height="3" rx="1.5" fill="url(#tealg)" opacity="0.6" />
+  <text x="822" y="315" fill="#2dd4bf" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" letter-spacing="1.5">TECHNIQUE ATLAS</text>
+  <text x="822" y="348" fill="#f0eff5" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700">Method Selection</text>
+  <text x="822" y="383" fill="#b8b3c9" font-family="Georgia, serif" font-size="19">Choose techniques by</text>
+  <text x="822" y="410" fill="#b8b3c9" font-family="Georgia, serif" font-size="19">challenge type</text>
 
-  <path d="M163 535h874" stroke="url(#accent)" stroke-linecap="round" stroke-width="8" />
-  <circle cx="426" cy="535" r="12" fill="url(#accent)" />
-  <circle cx="775" cy="535" r="12" fill="url(#highlight)" />
+  <line x1="90" y1="540" x2="1110" y2="540" stroke="rgba(255,255,255,0.07)" stroke-width="1" />
+  <text x="90" y="575" fill="#7e7896" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="500">cps.edgardn.top</text>
+  <text x="1110" y="575" fill="#7e7896" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="500" text-anchor="end">Win Wenger Archive</text>
 </svg>

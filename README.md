@@ -1,58 +1,91 @@
-# CPS Web App
+# CPS
 
-Production-ready React + TypeScript + Vite app for the Creative Problem Solving (CPS) knowledge base.
+A method-focused archive site for Win Wenger's Creative Problem Solving techniques. Built with React 19, TypeScript, and Vite.
 
-## Tech Stack
+**Live:** [cps.edgardn.top](https://cps.edgardn.top)
 
-- React 19
-- React Router 7
-- TypeScript 5
-- Vite 7
-- ESLint 9
+## What this site covers
 
-## Local Development
+- **Image Streaming** - 7-step discovery protocol with session templates and troubleshooting
+- **Predictive Imagery** - Pre-study priming workflow with journal tracking
+- **Technique Atlas** - 8 CPS methods (Over-the-Wall, Borrowed Genius, Toolbuilder, etc.) with situation-based selection
+- **Legacy** - Historical timeline of Project Renaissance (1970s-2014)
+- **References** - 15 primary sources from winwenger.com, linked to every claim via source IDs
+
+All content is sourced from Wenger's archive material. Each claim carries traceable source references (R1-R15).
+
+## Tech stack
+
+| Layer       | Technology                          |
+|-------------|-------------------------------------|
+| Framework   | React 19 + React Router 7          |
+| Language    | TypeScript 5.9 (strict mode)       |
+| Build       | Vite 7                              |
+| Styling     | Vanilla CSS with custom properties  |
+| Fonts       | Inter (UI) + Source Serif 4 (body)  |
+| Linting     | ESLint 9 (flat config)             |
+
+Zero runtime dependencies beyond React and React Router. All content is static (no API calls).
+
+## Getting started
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Quality Gates
+## Scripts
 
-```bash
-npm run check
+| Command            | Description                              |
+|--------------------|------------------------------------------|
+| `npm run dev`      | Start dev server with HMR                |
+| `npm run build`    | Type-check + production build            |
+| `npm run preview`  | Preview production build locally         |
+| `npm run lint`     | Run ESLint (zero warnings enforced)      |
+| `npm run typecheck`| Run TypeScript compiler check            |
+| `npm run check`    | Run lint + typecheck together            |
+
+## Project structure
+
+```
+src/
+  components/     Reusable UI (layout, SEO, page headers, source badges, error boundary)
+  pages/          Route pages (Home, Legacy, Image Streaming, Predictive Imagery, Technique Atlas, References, 404)
+  config/         Site-level constants and SEO config
+  data/           All content data with typed exports (15 references, 8 techniques, 40+ sections)
+  App.tsx          Router setup
+  App.css          Design system (CSS custom properties, all component styles)
+  index.css        Reset and base typography
+public/
+  favicon.svg      SVG favicon
+  og-image.svg     Social preview image
+  site.webmanifest PWA manifest
+  sitemap.xml      Sitemap
+  robots.txt       Robots directives
 ```
 
-This runs:
+## Environment variables
 
-- `npm run lint`
-- `npm run typecheck`
-
-## Production Build
-
-```bash
-npm run build
-npm run preview
-```
-
-Build output is generated in `/dist`.
-
-## Environment Variables
-
-Create a local env file from `.env.example` and set your public site URL:
+Copy `.env.example` and set your deployment URL:
 
 ```bash
 VITE_SITE_URL=https://cps.edgardn.top
 ```
 
-`VITE_SITE_URL` is used for canonical URLs and social metadata (`og:url`, `og:image`, Twitter cards).
+Used for canonical URLs, Open Graph tags, and Twitter Card metadata. Falls back to `window.location.origin` if not set.
 
-## Metadata and Branding
+## Design
 
-The app includes:
+Dark indigo theme with violet (`#8b5cf6`) as the primary brand color, amber and teal accents. Features gradient text headings, glassmorphic navigation, animated ambient background glows, and interactive hover states on all cards. Fully responsive with accessibility support (skip links, focus outlines, reduced motion).
 
-- Route-level SEO metadata management (`/src/components/Seo.tsx`)
-- Production favicon/icon set (`/public/favicon.ico`, `/public/favicon.svg`, `/public/favicon-16x16.png`, `/public/favicon-32x32.png`, `/public/apple-touch-icon.png`)
-- Social preview image (`/public/og-image.svg`)
-- Web app manifest (`/public/site.webmanifest`)
-- Robots directives (`/public/robots.txt`)
+## Production build
+
+```bash
+npm run build
+```
+
+Outputs to `dist/`. Includes hidden source maps, a Vite manifest, and vendor chunk splitting for React dependencies.
+
+## License
+
+This is a tribute project. All referenced content belongs to Win Wenger and the Project Renaissance archive.

@@ -2,11 +2,13 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  font-family: 'Literata', serif;
+  font-family: 'Source Serif 4', Georgia, serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #1e1b2e;
+  color: #f0eff5;
 }
 
 #root {
@@ -21,4 +23,9 @@ body {
 
 a {
   color: inherit;
+}
+
+::selection {
+  background: rgba(139, 92, 246, 0.35);
+  color: #fff;
 }
